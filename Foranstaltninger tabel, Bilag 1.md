@@ -4,21 +4,33 @@ Klassifikation af foranstaltninger
 
 # *Hændelsesforløbet*
 
-## ⏱️ 1. **Preventive / Forebyggende** - *Før en sikkerhedshændelse indtræffer*.
+## ⏱️ 1. **Preventive / Forebyggende** - *Før en sikkerhedshændelse indtræffer.*
 ### 🧭 Generel funktion i risikohåndteringen
 > Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
 
-3. **Reductive / Begrænsende:** Før eller under en sikkerhedshændelse.
+---
 
-4. **Detective / Opklarende:** Under eller kort efter en sikkerhedshændelse.
+## ⏱️ 2. **Reductive / Begrænsende:** - *Før eller under en sikkerhedshændelse.*
 
-5. **Responsive / Responsiv:** Efter mistanke eller konstatering af en sikkerhedshændelse, før egentlig genoprettelse.
+---
 
-6. **Recovery / Genoprettende:** Efter den første håndtering af sikkerhedshændelsen.
+## ⏱️ 3. **Detective / Opklarende:** - *Under eller kort efter en sikkerhedshændelse.*
 
-7. **Corrective / Korrigerende:** Efter sikkerhedshændelsen, når årsag og relevante sårbarheder er identificeret.
+---
 
-8. **Evaluation / Evaluerende:** Efter implementering af foranstaltninger og løbende efter hændelser, øvelser eller ændringer i systemer og arbejdsgange.
+## ⏱️ 4. **Responsive / Responsiv:** - *Efter mistanke eller konstatering af en sikkerhedshændelse, før egentlig genoprettelse.*
+
+---
+
+## ⏱️ 5. **Recovery / Genoprettende:** - *Efter den første håndtering af sikkerhedshændelsen.*
+
+---
+
+## ⏱️ 6. **Corrective / Korrigerende:** - *Efter sikkerhedshændelsen, når årsag og relevante sårbarheder er identificeret.*
+
+---
+
+## ⏱️ 7. **Evaluation / Evaluerende:** - *Efter implementering af foranstaltninger og løbende efter hændelser, øvelser eller ændringer i systemer og arbejdsgange.*
 
 ---
 
