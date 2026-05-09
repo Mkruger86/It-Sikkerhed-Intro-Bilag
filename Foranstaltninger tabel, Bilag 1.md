@@ -21,7 +21,7 @@ Klassifikation af foranstaltninger
 
 ## ⏱️ 2. **Reductive / Begrænsende:** - *Før eller under en sikkerhedshændelse.*
 ### 🧭 Generel funktion i risikohåndteringen
-> Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
+> Reducerer konsekvensen, hvis en sikkerhedshændelse indtræffer. Foranstaltningen forudsætter ikke, at hændelsen altid kan forhindres, men begrænser rækkevidden af misbruget og den skade, der kan opstå
 
 ### 🧩 Eksempler på relevante foranstaltninger
 > 
@@ -36,7 +36,7 @@ Klassifikation af foranstaltninger
 
 ## ⏱️ 3. **Detective / Opklarende:** - *Under eller kort efter en sikkerhedshændelse.*
 ### 🧭 Generel funktion i risikohåndteringen
-> Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
+> Gør uønsket aktivitet synlig, så en sikkerhedshændelse kan opdages, dokumenteres og undersøges. Foranstaltningen standser ikke nødvendigvis hændelsen, men skaber grundlag for at fastslå, hvad der er sket.
 
 ### 🧩 Eksempler på relevante foranstaltninger
 > 
@@ -115,11 +115,10 @@ Klassifikation af foranstaltninger
 
 > ## 🧭 Generel funktion i risikohåndteringen
 
-- **Preventive / Forebyggende:** 
 
-- **Reductive / Begrænsende:** Reducerer konsekvensen, hvis en sikkerhedshændelse indtræffer. Foranstaltningen forudsætter ikke, at hændelsen altid kan forhindres, men begrænser rækkevidden af misbruget og den skade, der kan opstå.
+- **Reductive / Begrænsende:** .
 
-- **Detective / Opklarende:** Gør uønsket aktivitet synlig, så en sikkerhedshændelse kan opdages, dokumenteres og undersøges. Foranstaltningen standser ikke nødvendigvis hændelsen, men skaber grundlag for at fastslå, hvad der er sket.
+- **Detective / Opklarende:** 
 
 - **Responsive / Responsiv:** Sikrer en fast reaktion, når en sikkerhedshændelse er mistænkt eller konstateret. Foranstaltningen skal give en kendt fremgangsmåde for, hvem der handler, hvad der sikres, og hvilke beslutninger der skal træffes.
 
