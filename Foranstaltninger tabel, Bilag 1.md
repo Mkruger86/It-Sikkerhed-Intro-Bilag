@@ -2,7 +2,7 @@ Klassifikation af foranstaltninger
 
 ---
 
-# _ Hændelsesforløbet_
+# *Hændelsesforløbet*
 
 > ## ⏱️ 1. **Preventive / Forebyggende:**
 Før en sikkerhedshændelse indtræffer.
