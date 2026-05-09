@@ -1,4 +1,4 @@
-Bilag – Klassifikation af foranstaltninger
+Klassifikation af foranstaltninger
 
 ---
 
