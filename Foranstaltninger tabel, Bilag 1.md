@@ -5,7 +5,8 @@ Klassifikation af foranstaltninger
 # *Hændelsesforløbet*
 
 > ## ⏱️ 1. **Preventive / Forebyggende** - *Før en sikkerhedshændelse indtræffer*.
-### 🧭 + Generel funktion i risikohåndteringen
+### 🧭 Generel funktion i risikohåndteringen
+Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
 
 3. **Reductive / Begrænsende:** Før eller under en sikkerhedshændelse.
 
@@ -23,7 +24,7 @@ Klassifikation af foranstaltninger
 
 > ## 🧭 Generel funktion i risikohåndteringen
 
-- **Preventive / Forebyggende:** Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
+- **Preventive / Forebyggende:** 
 
 - **Reductive / Begrænsende:** Reducerer konsekvensen, hvis en sikkerhedshændelse indtræffer. Foranstaltningen forudsætter ikke, at hændelsen altid kan forhindres, men begrænser rækkevidden af misbruget og den skade, der kan opstå.
 
