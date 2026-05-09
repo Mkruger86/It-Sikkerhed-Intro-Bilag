@@ -5,16 +5,16 @@ Klassifikation af foranstaltninger
 # Hændelsesforløbet
 
 ## ⏱️ 1. **Preventive / Forebyggende** - *Før en sikkerhedshændelse indtræffer.*
-> - #### Generel funktion i risikohåndteringen 🧭
+> - ### Generel funktion i risikohåndteringen 🧭
 > Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
 
-> - #### Eksempler på relevante foranstaltninger 🧩
+> - ### Eksempler på relevante foranstaltninger 🧩
 > Skærmlås, adgangskontrol, flerfaktorgodkendelse, rettighedsstyring, adgang efter arbejdsbehov, clear screen-praksis og krav om særskilt godkendelse ved administrative handlinger.
 
-> - ####  Relation til etablerede grundbegreber 🔗
+> - ###  Relation til etablerede grundbegreber 🔗
 > Knytter sig direkte til **sårbarhed** og **sandsynlighed**. Den forebyggende foranstaltning reducerer det forhold, truslen kan udnytte, og mindsker dermed sandsynligheden for brud på **fortrolighed**, **integritet** eller **tilgængelighed**
 
-> - ####  Anvendelse i Jordløse-casen 🏫
+> - ###  Anvendelse i Jordløse-casen 🏫
 > Forebyggende foranstaltninger skal hindre, at en elev kan bruge den aktive session til at åbne prøvemateriale, ændre dokumenter eller påvirke delinger på Windows-serveren.
 
 ---
