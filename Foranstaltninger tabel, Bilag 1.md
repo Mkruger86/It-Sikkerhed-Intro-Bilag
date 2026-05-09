@@ -52,7 +52,7 @@
 
 ---
 
-## Relation til etablerede grundbegreber
+## Relation til grundbegreber
 
 - **Preventive / Forebyggende:** Knytter sig direkte til **sårbarhed** og **sandsynlighed**. Den forebyggende foranstaltning reducerer det forhold, truslen kan udnytte, og mindsker dermed sandsynligheden for brud på **fortrolighed**, **integritet** eller **tilgængelighed**.
 
