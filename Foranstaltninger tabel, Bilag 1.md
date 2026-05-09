@@ -8,13 +8,13 @@ Klassifikation af foranstaltninger
 - #### Generel funktion i risikohåndteringen🧭
 > Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
 
-### - Eksempler på relevante foranstaltninger🧩
+- #### - Eksempler på relevante foranstaltninger🧩
 > 
 
-### 🔗 Relation til etablerede grundbegreber
+- #### 🔗 Relation til etablerede grundbegreber
 >
 
-### 🏫 Anvendelse i Jordløse-casen
+- #### 🏫 Anvendelse i Jordløse-casen
 >
 
 ---
