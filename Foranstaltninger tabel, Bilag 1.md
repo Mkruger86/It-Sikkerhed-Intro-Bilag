@@ -1,5 +1,21 @@
 > ## 🧭 Generel funktion i risikohåndteringen
 
+- **Preventive / Forebyggende:** Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
+
+- **Reductive / Begrænsende:** Reducerer konsekvensen, hvis en sikkerhedshændelse indtræffer. Foranstaltningen forudsætter ikke, at hændelsen altid kan forhindres, men begrænser rækkevidden af misbruget og den skade, der kan opstå.
+
+- **Detective / Opklarende:** Gør uønsket aktivitet synlig, så en sikkerhedshændelse kan opdages, dokumenteres og undersøges. Foranstaltningen standser ikke nødvendigvis hændelsen, men skaber grundlag for at fastslå, hvad der er sket.
+
+- **Responsive / Responsiv:** Sikrer en fast reaktion, når en sikkerhedshændelse er mistænkt eller konstateret. Foranstaltningen skal give en kendt fremgangsmåde for, hvem der handler, hvad der sikres, og hvilke beslutninger der skal træffes.
+
+- **Recovery / Genoprettende:** Genskaber normal drift, korrekt adgang eller korrekt datagrundlag efter en sikkerhedshændelse. Foranstaltningen skal bringe systemer, filer og adgange tilbage til en brugbar og kontrolleret tilstand.
+
+- **Corrective / Korrigerende:** Retter den sårbarhed, fejlkonfiguration eller utilstrækkelige praksis, der gjorde hændelsen mulig eller forværrede dens konsekvens. Foranstaltningen skal mindske risikoen for gentagelse.
+
+- **Evaluation / Evaluerende:** Vurderer, om de valgte foranstaltninger virker efter hensigten, og om risikovurderingen fortsat er dækkende. Foranstaltningen skal give grundlag for at fastholde, ændre eller supplere risikohåndteringen.
+
+---
+
 > ## ⏱️ Placering i hændelsesforløbet
 
 1. **Preventive / Forebyggende:** Før en sikkerhedshændelse indtræffer.
@@ -15,22 +31,6 @@
 6. **Corrective / Korrigerende:** Efter sikkerhedshændelsen, når årsag og relevante sårbarheder er identificeret.
 
 7. **Evaluation / Evaluerende:** Efter implementering af foranstaltninger og løbende efter hændelser, øvelser eller ændringer i systemer og arbejdsgange.
-
----
-
-- **Preventive / Forebyggende:** Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
-
-- **Reductive / Begrænsende:** Reducerer konsekvensen, hvis en sikkerhedshændelse indtræffer. Foranstaltningen forudsætter ikke, at hændelsen altid kan forhindres, men begrænser rækkevidden af misbruget og den skade, der kan opstå.
-
-- **Detective / Opklarende:** Gør uønsket aktivitet synlig, så en sikkerhedshændelse kan opdages, dokumenteres og undersøges. Foranstaltningen standser ikke nødvendigvis hændelsen, men skaber grundlag for at fastslå, hvad der er sket.
-
-- **Responsive / Responsiv:** Sikrer en fast reaktion, når en sikkerhedshændelse er mistænkt eller konstateret. Foranstaltningen skal give en kendt fremgangsmåde for, hvem der handler, hvad der sikres, og hvilke beslutninger der skal træffes.
-
-- **Recovery / Genoprettende:** Genskaber normal drift, korrekt adgang eller korrekt datagrundlag efter en sikkerhedshændelse. Foranstaltningen skal bringe systemer, filer og adgange tilbage til en brugbar og kontrolleret tilstand.
-
-- **Corrective / Korrigerende:** Retter den sårbarhed, fejlkonfiguration eller utilstrækkelige praksis, der gjorde hændelsen mulig eller forværrede dens konsekvens. Foranstaltningen skal mindske risikoen for gentagelse.
-
-- **Evaluation / Evaluerende:** Vurderer, om de valgte foranstaltninger virker efter hensigten, og om risikovurderingen fortsat er dækkende. Foranstaltningen skal give grundlag for at fastholde, ændre eller supplere risikohåndteringen.
 
 ---
 
