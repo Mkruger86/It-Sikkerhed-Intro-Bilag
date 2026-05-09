@@ -8,6 +8,9 @@ Klassifikation af foranstaltninger
 ### 🧭 Generel funktion i risikohåndteringen
 > Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
 
+### 🧩 Eksempler på relevante foranstaltninger
+
+
 ---
 
 ## ⏱️ 2. **Reductive / Begrænsende:** - *Før eller under en sikkerhedshændelse.*
