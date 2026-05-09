@@ -20,28 +20,98 @@ Klassifikation af foranstaltninger
 ---
 
 ## ⏱️ 2. **Reductive / Begrænsende:** - *Før eller under en sikkerhedshændelse.*
+### 🧭 Generel funktion i risikohåndteringen
+> Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
+
+### 🧩 Eksempler på relevante foranstaltninger
+> 
+
+### 🔗 Relation til etablerede grundbegreber
+>
+
+### 🏫 Anvendelse i Jordløse-casen
+>
 
 ---
 
 ## ⏱️ 3. **Detective / Opklarende:** - *Under eller kort efter en sikkerhedshændelse.*
+### 🧭 Generel funktion i risikohåndteringen
+> Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
+
+### 🧩 Eksempler på relevante foranstaltninger
+> 
+
+### 🔗 Relation til etablerede grundbegreber
+>
+
+### 🏫 Anvendelse i Jordløse-casen
+>
 
 ---
 
 ## ⏱️ 4. **Responsive / Responsiv:** - *Efter mistanke eller konstatering af en sikkerhedshændelse, før egentlig genoprettelse.*
 
+### 🧭 Generel funktion i risikohåndteringen
+> Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
+
+### 🧩 Eksempler på relevante foranstaltninger
+> 
+
+### 🔗 Relation til etablerede grundbegreber
+>
+
+### 🏫 Anvendelse i Jordløse-casen
+>
+
 ---
 
 ## ⏱️ 5. **Recovery / Genoprettende:** - *Efter den første håndtering af sikkerhedshændelsen.*
+### 🧭 Generel funktion i risikohåndteringen
+> Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
+
+### 🧩 Eksempler på relevante foranstaltninger
+> 
+
+### 🔗 Relation til etablerede grundbegreber
+>
+
+### 🏫 Anvendelse i Jordløse-casen
+>
 
 ---
 
 ## ⏱️ 6. **Corrective / Korrigerende:** - *Efter sikkerhedshændelsen, når årsag og relevante sårbarheder er identificeret.*
+### 🧭 Generel funktion i risikohåndteringen
+> Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
+
+### 🧩 Eksempler på relevante foranstaltninger
+> 
+
+### 🔗 Relation til etablerede grundbegreber
+>
+
+### 🏫 Anvendelse i Jordløse-casen
+>
 
 ---
 
 ## ⏱️ 7. **Evaluation / Evaluerende:** - *Efter implementering af foranstaltninger og løbende efter hændelser, øvelser eller ændringer i systemer og arbejdsgange.*
+### 🧭 Generel funktion i risikohåndteringen
+> Reducerer sandsynligheden for, at en trussel kan udnytte en sårbarhed. Foranstaltningen placeres før hændelsen og skal gøre uautoriseret adgang, misbrug af rettigheder eller menneskelige fejl mindre sandsynlige.
+
+### 🧩 Eksempler på relevante foranstaltninger
+> 
+
+### 🔗 Relation til etablerede grundbegreber
+>
+
+### 🏫 Anvendelse i Jordløse-casen
+>
 
 ---
+
+
+
 
 > ## 🧭 Generel funktion i risikohåndteringen
 
