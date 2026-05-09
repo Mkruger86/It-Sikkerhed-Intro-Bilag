@@ -2,7 +2,7 @@ Klassifikation af foranstaltninger
 
 ---
 
-# _Hændelsesforløbet_
+# Hændelsesforløbet
 
 ## ⏱️ 1. **Preventive / Forebyggende** - *Før en sikkerhedshændelse indtræffer.*
 ### 🧭 Generel funktion i risikohåndteringen
