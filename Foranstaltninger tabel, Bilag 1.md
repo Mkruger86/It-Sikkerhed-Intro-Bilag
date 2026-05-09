@@ -5,18 +5,19 @@
 > ## ⏱️ Placering i hændelsesforløbet
 
 1. **Preventive / Forebyggende:** Før en sikkerhedshændelse indtræffer.
+> ### 🧭 Generel funktion i risikohåndteringen
 
-2. **Reductive / Begrænsende:** Før eller under en sikkerhedshændelse.
+3. **Reductive / Begrænsende:** Før eller under en sikkerhedshændelse.
 
-3. **Detective / Opklarende:** Under eller kort efter en sikkerhedshændelse.
+4. **Detective / Opklarende:** Under eller kort efter en sikkerhedshændelse.
 
-4. **Responsive / Responsiv:** Efter mistanke eller konstatering af en sikkerhedshændelse, før egentlig genoprettelse.
+5. **Responsive / Responsiv:** Efter mistanke eller konstatering af en sikkerhedshændelse, før egentlig genoprettelse.
 
-5. **Recovery / Genoprettende:** Efter den første håndtering af sikkerhedshændelsen.
+6. **Recovery / Genoprettende:** Efter den første håndtering af sikkerhedshændelsen.
 
-6. **Corrective / Korrigerende:** Efter sikkerhedshændelsen, når årsag og relevante sårbarheder er identificeret.
+7. **Corrective / Korrigerende:** Efter sikkerhedshændelsen, når årsag og relevante sårbarheder er identificeret.
 
-7. **Evaluation / Evaluerende:** Efter implementering af foranstaltninger og løbende efter hændelser, øvelser eller ændringer i systemer og arbejdsgange.
+8. **Evaluation / Evaluerende:** Efter implementering af foranstaltninger og løbende efter hændelser, øvelser eller ændringer i systemer og arbejdsgange.
 
 ---
 
