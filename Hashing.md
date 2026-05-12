@@ -64,7 +64,7 @@
 ---
 
 # 5. Ændring af filens indhold
-<img width="430" height="53" alt="image" src="https://github.com/user-attachments/assets/1de715ea-ee6a-4796-ab66-30f51109d452" />
+<img width="430" height="153" alt="image" src="https://github.com/user-attachments/assets/1de715ea-ee6a-4796-ab66-30f51109d452" />
 
 #### Bemærk, at der nu er sat et punktum til sidst. Selvom ændringen er lille, er filindholdet ikke længere identisk med det indhold, den første hashværdi blev beregnet ud fra.
 
@@ -88,7 +88,7 @@
 ---
 
 # 7. Gentaget kontrol mod den oprindelige hashværdi
-<img width="330" height="59" alt="image" src="https://github.com/user-attachments/assets/88ab681c-9e54-481d-b0ca-98db6b81b9fb" />
+<img width="330" height="159" alt="image" src="https://github.com/user-attachments/assets/88ab681c-9e54-481d-b0ca-98db6b81b9fb" />
 
 #### `sha256sum -c`
 
