@@ -25,72 +25,117 @@
 ---
 
 # 3. Generering af afsenderens private RSA-nøgle
-<img width="576" height="170" alt="image" src="https://github.com/user-attachments/assets/c4404c71-aafc-432a-85e6-0e14474dbaeb" />
 
-#### `sha256sum`
 
-> Beregner en SHA-256-hashværdi for filens indhold. Resultatet er en kontrolværdi på 256 bit, som normalt vises som 64 hexadecimale tegn. Samme filindhold giver samme hashværdi, så længe inputtet er identisk.
+#### `genpkey`
 
-#### `~/Hashing/klartekst.txt`
+> Genererer nøglemateriale. Her oprettes afsenderens private nøgle, som senere bruges til at fremstille den digitale signatur.
 
-> Inputfilen til hashberegningen. Hele filens indhold indgår i beregningen, så selv en lille ændring i teksten vil betyde, at den oprindelige kontrolværdi ikke længere passer til filen.
+#### `-algorithm RSA`
 
-#### `~/Hashing/klartekst.sha256`
+> Vælger RSA som algoritme for afsenderens signaturnøglepar. Nøglerne bruges her i signaturprocessen, hvor den private nøgle danner signaturen, mens den offentlige nøgle gør det muligt for modtageren at kontrollere den.
 
-> Indeholder den beregnede SHA-256-hashværdi sammen med stien til den fil, hashværdien hører til. Det gør filen egnet til efterfølgende integritetskontrol med sha256sum -c.
+#### `-out ~/Signaturer/afsender_privat_noegle.pem`
 
-#### `cat ~/Hashing/klartekst.sha256`
+> Gemmer afsenderens private nøgle i filen afsender_privat_noegle.pem. Nøglen skal beskyttes, fordi adgang til den gør det muligt at danne signaturer, der fremstår som afsenderens.
 
-> Viser den gemte hashværdi i terminalen. Outputtet vil bestå af hashværdien efterfulgt af filstien.
+#### `-pkeyopt rsa_keygen_bits:2048`
 
----
-
-# 4. Kontrol mod den gemte hashværdi
-<img width="368" height="147" alt="image" src="https://github.com/user-attachments/assets/95b259a1-41a4-42d0-83da-1add9aa78976" />
-
-#### `sha256sum -c`
-
-> Kontrollerer, om filen stadig svarer til den gemte SHA-256-hashværdi. Kommandoen læser hashfilen, beregner en ny hashværdi for den angivne fil og sammenligner de to værdier. Hvis de matcher, vises resultatet som OK.
-
-#### `~/Hashing/klartekst.sha256`
-
-> Hashfilen bruges som reference ved kontrollen. Den indeholder både den tidligere beregnede SHA-256-værdi og stien til den fil, der skal kontrolleres.
+> Sætter RSA-nøglens størrelse til 2048 bit. Svarer her til den størrelse, der tidligere blev brugt.
 
 ---
 
-# 5. Ændring af filens indhold
-<img width="430" height="153" alt="image" src="https://github.com/user-attachments/assets/1de715ea-ee6a-4796-ab66-30f51109d452" />
+# 4. Udledning af afsenderens offentlige RSA-nøgle
 
-#### Bemærk, at der nu er sat et punktum til sidst. Selvom ændringen er lille, er filindholdet ikke længere identisk med det indhold, den første hashværdi blev beregnet ud fra.
+#### `pkey`
 
----
+> Behandler nøglefiler. Her læses afsenderens private nøgle, og den tilhørende offentlige nøgle skrives ud som en separat fil.
 
-# 6. Beregning af ny hashværdi efter ændringen
-<img width="554" height="147" alt="image" src="https://github.com/user-attachments/assets/b49a8ec8-0aad-477c-839f-501f31704266" />
+#### `-in ~/Signaturer/afsender_privat_noegle.pem`
 
-#### `sha256sum`
+> Bruger afsenderens private nøgle som input til udledningen af den offentlige nøgle.
 
-> Beregner en ny SHA-256-hashværdi på baggrund af det ændrede filindhold. Da inputtet ikke længere er det samme som før, bliver den nye hashværdi anderledes end den oprindelige. Hashværdier bruges netop til at opdage, at data er blevet ændret.
+#### `-pubout`
 
-#### `~/Hashing/klartekst.txt`
+> Skriver den offentlige nøgle ud. I et kommunikationsforløb skal modtageren have denne nøgle for at kunne verificere afsenderens signatur.
 
-> Inputfilen er fortsat den samme, men indholdet er nu ændret.
+#### `-out ~/Signaturer/afsender_offentlig_noegle.pem`
 
-#### `~/Hashing/klartekst_aendret.sha256`
-
-> Indeholder SHA-256-hashværdien for den ændrede klartekstfil.
+> Gemmer den offentlige nøgle i filen afsender_offentlig_noegle.pem. Nøglen kan deles med modtageren og bruges til at kontrollere, om signaturen passer til afsenderens private nøgle.
 
 ---
 
-# 7. Gentaget kontrol mod den oprindelige hashværdi
-<img width="330" height="159" alt="image" src="https://github.com/user-attachments/assets/88ab681c-9e54-481d-b0ca-98db6b81b9fb" />
+# 5. Oprettelse af digital signatur
 
-#### `sha256sum -c`
+#### `openssl dgst`
 
-> Kontrollerer igen filen mod den oprindelige hashværdi. Denne gang beregner kommandoen en SHA-256-værdi for den ændrede fil, som ikke længere matcher den værdi, der er gemt i klartekst.sha256. Derfor vises kontrollen som fejlet.
+> Beregner først en hashværdi af beskeden og bruger den herefter som grundlag for signaturen. Det er derfor ikke hele beskeden, der signeres direkte, men dens kryptografiske fingeraftryk.
 
-##### `~/Hashing/klartekst.sha256`
+#### `-sha256`
 
-> Den oprindelige hashfil bruges som reference for, hvordan filens indhold så ud før ændringen.
+> Vælger SHA-256 til hashberegningen. Den resulterende hashværdi repræsenterer beskedens præcise indhold, så selv en lille ændring i teksten giver et andet signaturgrundlag.
 
-#### Resultatet viser hashingens funktion ved integritetskontrol: filen behøver ikke at være ulæselig eller krypteret, men en ændring i indholdet kan opdages, fordi den tidligere hashværdi ikke længere passer til filen.
+#### `-sign ~/Signaturer/afsender_privat_noegle.pem`
+
+> Bruger afsenderens private nøgle til at danne signaturen. Det er denne anvendelse af den private nøgle, der knytter signaturen til afsenderen.
+
+#### `-sigopt rsa_padding_mode:pss`
+
+> Vælger RSA-PSS som signaturmetode. PSS er den moderne signaturtilpasning til RSA i denne sammenhæng og bruges til at danne signaturen på en måde, der er egnet til praktisk anvendelse.
+
+#### `-out ~/Signaturer/signatur.bin`
+
+> Gemmer den digitale signatur i binært format. Signaturen ligger som en separat fil og erstatter ikke selve beskeden.
+
+#### `~/Signaturer/besked.txt`
+
+> Beskeden, der signeres. Signaturen binder sig til dette konkrete filindhold. Ændres indholdet bagefter, passer signaturen ikke længere.
+
+---
+
+# 6. Verifikation af den digitale signatur
+
+
+#### `openssl dgst`
+
+> Beregner på ny en SHA-256-hash af beskeden og sammenholder den med signaturen. Verifikationen kontrollerer dermed, om signaturen passer til både beskedens aktuelle indhold og afsenderens offentlige nøgle.
+
+#### `-sha256`
+
+> Bruger samme hashfunktion som ved signeringen. Signering og verifikation skal følge samme beregningsgrundlag.
+
+#### `-verify ~/Signaturer/afsender_offentlig_noegle.pem`
+
+> Bruger afsenderens offentlige nøgle til at kontrollere signaturen. Modtageren får dermed mulighed for at afgøre, om signaturen passer til afsenderens nøglepar.
+
+#### `-sigopt rsa_padding_mode:pss`
+
+> Bruger samme RSA-PSS-metode som ved signeringen. Verifikationen skal tolke signaturen efter den samme signaturstruktur, som blev brugt ved oprettelsen.
+
+#### `-signature ~/Signaturer/signatur.bin`
+
+> Udpeger den signaturfil, der skal kontrolleres.
+
+#### `~/Signaturer/besked.txt`
+
+> Beskeden, som signaturen verificeres imod. Indholdet skal være uændret siden signeringstidspunktet.
+
+#### *Resultatet viser, at signaturen passer til beskeden og til afsenderens offentlige nøgle.*
+
+---
+
+# 7. Verifikation med forkert offentlig nøgle
+
+#### `openssl genpkey -algorithm RSA -out ~/Signaturer/forkert_privat_noegle.pem -pkeyopt rsa_keygen_bits:2048`
+
+> Opretter et nyt RSA-nøglepar, som ikke hører sammen med afsenderens signaturnøgle.
+
+##### `openssl pkey -in ~/Signaturer/forkert_privat_noegle.pem -pubout -out ~/Signaturer/forkert_offentlig_noegle.pem`
+
+> Udleder den offentlige nøgle til det forkerte nøglepar.
+
+##### `-verify ~/Signaturer/forkert_offentlig_noegle.pem`
+
+> Forsøger at verificere signaturen med en offentlig nøgle, der ikke passer til den private nøgle, som dannede signaturen
+
+#### *Fejler da signaturen kan kun verificeres med den offentlige nøgle, der hører til den private nøgle, som blev brugt ved signeringen.*
