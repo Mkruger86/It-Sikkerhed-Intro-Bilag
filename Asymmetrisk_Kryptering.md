@@ -11,7 +11,7 @@
 
 ---
 
-> Fortsættelse af krypteringsalgoritmer demonstration. Har måske misset nogle ZSH-kommandoer, som allerede gennemgået i foregående dokument (symmetrisk kryptering), så referer til https://github.com/Mkruger86/It-Sikkerhed-Intro-Bilag/blob/main/Symmetrisk_Kryptering.md for disse, men har ellers forsøgt generelt at gå igennem alle kommandoer slavisk, samt tilkoblet kryptografisk betydning iht. brugen, hvis det nu skulle gå i glemmebogen senere hen.
+*Fortsættelse af krypteringsalgoritmer demonstration. Referer til https://github.com/Mkruger86/It-Sikkerhed-Intro-Bilag/blob/main/Symmetrisk_Kryptering.md for symmetriske version. Jeg har forsøgt generelt at gå igennem alle kommandoer slavisk, samt tilkoblet kryptografisk betydning iht. brugen, hvis det nu skulle gå i glemmebogen senere hen. Desuden jeg i denne version været lidt mere grundigt med billede dokumentation*
 
 ---
 
