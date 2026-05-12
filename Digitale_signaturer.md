@@ -17,6 +17,7 @@
 ---
 
 # 1. Oprettelse af arbejdsmappe
+<img width="152" height="132" alt="image" src="https://github.com/user-attachments/assets/2ed87f26-1a64-4101-a090-5542169d0dbc" />
 
 ---
 
@@ -120,7 +121,7 @@
 
 > Beskeden, som signaturen verificeres imod. Indholdet skal være uændret siden signeringstidspunktet.
 
-#### *Resultatet viser, at signaturen passer til beskeden og til afsenderens offentlige nøgle.*
+### *Resultatet viser signaturen passer til beskeden og til afsenderens offentlige nøgle.*
 
 ---
 
@@ -138,4 +139,4 @@
 
 > Forsøger at verificere signaturen med en offentlig nøgle, der ikke passer til den private nøgle, som dannede signaturen
 
-#### *Fejler da signaturen kan kun verificeres med den offentlige nøgle, der hører til den private nøgle, som blev brugt ved signeringen.*
+### *Fejler da signaturen kan kun verificeres med den offentlige nøgle, der hører til den private nøgle, som blev brugt ved signeringen.*
