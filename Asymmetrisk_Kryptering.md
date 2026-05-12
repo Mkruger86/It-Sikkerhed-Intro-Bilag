@@ -18,12 +18,14 @@
 # 1. Oprettelse af arbejdsmappe
 <img width="342" height="106" alt="image" src="https://github.com/user-attachments/assets/21474cd8-f593-44bc-a65a-85b73415158f" />
 
-
 <img width="109" height="150" alt="image" src="https://github.com/user-attachments/assets/a42ed244-6927-4854-9584-79a526963c30" />
 
 ---
 
 # 2. Generation af privat RSA-nøgle
+<img width="975" height="373" alt="image" src="https://github.com/user-attachments/assets/f5fe4ac4-6b24-46cf-b2e5-bf8db07d2139" />
+
+<img width="140" height="105" alt="image" src="https://github.com/user-attachments/assets/169be74b-ace2-4b6c-b242-40ba914d4ad3" />
 
 #### `GENPKEY`
 
