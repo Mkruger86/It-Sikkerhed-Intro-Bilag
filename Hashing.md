@@ -30,7 +30,7 @@
 ---
 
 # 3. Beregning og lagring af SHA-256-hashværdi
-<img width="576" height="70" alt="image" src="https://github.com/user-attachments/assets/c4404c71-aafc-432a-85e6-0e14474dbaeb" />
+<img width="576" height="170" alt="image" src="https://github.com/user-attachments/assets/c4404c71-aafc-432a-85e6-0e14474dbaeb" />
 
 #### `sha256sum`
 
@@ -51,7 +51,7 @@
 ---
 
 # 4. Kontrol mod den gemte hashværdi
-<img width="368" height="47" alt="image" src="https://github.com/user-attachments/assets/95b259a1-41a4-42d0-83da-1add9aa78976" />
+<img width="368" height="147" alt="image" src="https://github.com/user-attachments/assets/95b259a1-41a4-42d0-83da-1add9aa78976" />
 
 #### `sha256sum -c`
 
