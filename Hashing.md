@@ -16,12 +16,12 @@
 ---
 
 # 1. Oprettelse af arbejdsmappe
-<img width="535" height="160" alt="image" src="https://github.com/user-attachments/assets/867bef40-aea0-4878-8bba-808040b04ddb" />
+<img width="335" height="160" alt="image" src="https://github.com/user-attachments/assets/867bef40-aea0-4878-8bba-808040b04ddb" />
 
 ---
 
 # 2. Kopiering af klartekstfilen fra RSA-demonstrationen
-<img width="628" height="118" alt="image" src="https://github.com/user-attachments/assets/62292b25-dc9c-4b62-8665-7b7c74b4cb1a" />
+<img width="428" height="118" alt="image" src="https://github.com/user-attachments/assets/62292b25-dc9c-4b62-8665-7b7c74b4cb1a" />
 
 #### `cp ~/RSA/klartekst.txt ~/Hashing/klartekst.txt`
 
@@ -30,7 +30,7 @@
 ---
 
 # 3. Beregning og lagring af SHA-256-hashværdi
-<img width="476" height="70" alt="image" src="https://github.com/user-attachments/assets/c4404c71-aafc-432a-85e6-0e14474dbaeb" />
+<img width="576" height="70" alt="image" src="https://github.com/user-attachments/assets/c4404c71-aafc-432a-85e6-0e14474dbaeb" />
 
 #### `sha256sum`
 
@@ -51,7 +51,7 @@
 ---
 
 # 4. Kontrol mod den gemte hashværdi
-<img width="268" height="47" alt="image" src="https://github.com/user-attachments/assets/95b259a1-41a4-42d0-83da-1add9aa78976" />
+<img width="368" height="47" alt="image" src="https://github.com/user-attachments/assets/95b259a1-41a4-42d0-83da-1add9aa78976" />
 
 #### `sha256sum -c`
 
@@ -64,7 +64,7 @@
 ---
 
 # 5. Ændring af filens indhold
-<img width="330" height="53" alt="image" src="https://github.com/user-attachments/assets/1de715ea-ee6a-4796-ab66-30f51109d452" />
+<img width="430" height="53" alt="image" src="https://github.com/user-attachments/assets/1de715ea-ee6a-4796-ab66-30f51109d452" />
 
 #### Bemærk, at der nu er sat et punktum til sidst. Selvom ændringen er lille, er filindholdet ikke længere identisk med det indhold, den første hashværdi blev beregnet ud fra.
 
@@ -88,8 +88,7 @@
 ---
 
 # 7. Gentaget kontrol mod den oprindelige hashværdi
-
-
+<img width="330" height="59" alt="image" src="https://github.com/user-attachments/assets/88ab681c-9e54-481d-b0ca-98db6b81b9fb" />
 
 #### `sha256sum -c`
 
@@ -99,5 +98,4 @@
 
 > Den oprindelige hashfil bruges som reference for, hvordan filens indhold så ud før ændringen.
 
-
-### Resultatet viser hashingens funktion ved integritetskontrol: filen behøver ikke at være ulæselig eller krypteret, men en ændring i indholdet kan opdages, fordi den tidligere hashværdi ikke længere passer til filen.
+#### Resultatet viser hashingens funktion ved integritetskontrol: filen behøver ikke at være ulæselig eller krypteret, men en ændring i indholdet kan opdages, fordi den tidligere hashværdi ikke længere passer til filen.
