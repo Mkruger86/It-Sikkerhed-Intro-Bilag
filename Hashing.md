@@ -30,6 +30,7 @@
 ---
 
 # 3. Beregning og lagring af SHA-256-hashværdi
+<img width="476" height="70" alt="image" src="https://github.com/user-attachments/assets/c4404c71-aafc-432a-85e6-0e14474dbaeb" />
 
 #### `sha256sum`
 
@@ -50,6 +51,7 @@
 ---
 
 # 4. Kontrol mod den gemte hashværdi
+<img width="268" height="47" alt="image" src="https://github.com/user-attachments/assets/95b259a1-41a4-42d0-83da-1add9aa78976" />
 
 #### `sha256sum -c`
 
@@ -62,8 +64,9 @@
 ---
 
 # 5. Ændring af filens indhold
+<img width="330" height="53" alt="image" src="https://github.com/user-attachments/assets/1de715ea-ee6a-4796-ab66-30f51109d452" />
 
-### Teksten adskiller sig fra den oprindelige ved det sidste tegn: punktummet er erstattet af et udråbstegn. Selvom ændringen er lille, er filindholdet ikke længere identisk med det indhold, den første hashværdi blev beregnet ud fra.
+### Bemærk der nu er sat et punktum til sidst. Selvom ændringen er lille, er filindholdet ikke længere identisk med det indhold, den første hashværdi blev beregnet ud fra.
 
 ---
 
