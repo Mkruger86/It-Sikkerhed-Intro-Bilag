@@ -12,7 +12,7 @@
 ---
 
 # 1. Oprettelse af klartekst-fil
-<img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/1f46b6a4-0cc4-4a09-abd8-c8575b12479d" />
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/1f46b6a4-0cc4-4a09-abd8-c8575b12479d" />
 
 #### `ECHO`
 
@@ -33,7 +33,7 @@
 ---
 
 # 2. Adgangskode gemmes midlertidigt til OpenSSL
-<img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/85f138a5-cb6e-436a-958f-0ed30f5a0e01" />
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/85f138a5-cb6e-436a-958f-0ed30f5a0e01" />
 
 #### `PRINTF "INDTAST AES-ADGANGSKODE: "`
 
