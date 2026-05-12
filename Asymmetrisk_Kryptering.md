@@ -17,6 +17,7 @@
 
 # 1. Oprettelse af arbejdsmappe
 <img width="342" height="106" alt="image" src="https://github.com/user-attachments/assets/21474cd8-f593-44bc-a65a-85b73415158f" />
+
 <img width="109" height="150" alt="image" src="https://github.com/user-attachments/assets/a42ed244-6927-4854-9584-79a526963c30" />
 
 ---
