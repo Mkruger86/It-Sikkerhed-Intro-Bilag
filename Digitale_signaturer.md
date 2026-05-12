@@ -50,7 +50,7 @@
 
 # 4. Udledning af afsenderens offentlige RSA-nøgle
 <img width="948" height="93" alt="image" src="https://github.com/user-attachments/assets/a6d6f3de-1cb7-4f17-a978-3e34d952dafb" />
-<img width="223" height="52" alt="image" src="https://github.com/user-attachments/assets/766611ea-1d92-404c-9540-9bbb14bf0d26" />
+<img width="223" height="100" alt="image" src="https://github.com/user-attachments/assets/766611ea-1d92-404c-9540-9bbb14bf0d26" />
 
 #### `pkey`
 
