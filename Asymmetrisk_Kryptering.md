@@ -16,24 +16,26 @@
 ---
 
 # 1. Oprettelse af arbejdsmappe
+<img width="342" height="106" alt="image" src="https://github.com/user-attachments/assets/21474cd8-f593-44bc-a65a-85b73415158f" />
+<img width="109" height="150" alt="image" src="https://github.com/user-attachments/assets/a42ed244-6927-4854-9584-79a526963c30" />
 
 ---
 
 # 2. Generation af privat RSA-nøgle
 
-### `GENPKEY`
+#### `GENPKEY`
 
 > Genererer nøglemateriale. Her oprettes den private RSA-nøgle, som indeholder den hemmelige del af nøgleparret. Den private nøgle bruges senere til at dekryptere chiffertekst, der er krypteret med den tilhørende offentlige nøgle.
 
-### `-ALGORITHM RSA`
+#### `-ALGORITHM RSA`
 
 > Vælger RSA som algoritme for nøglematerialet. RSA bruger et nøglepar med en offentlig og en privat del, hvor den offentlige nøgle kan bruges til kryptering, mens kun den tilhørende private nøgle kan dekryptere resultatet. Sikkerheden bygger på, at den private nøgle ikke praktisk kan udledes fra den offentlige nøgle.
 
-### `-OUT ~/RSA/PRIVAT_NOEGLE.PEM`
+#### `-OUT ~/RSA/PRIVAT_NOEGLE.PEM`
 
 > Gemmer den private nøgle i filen privat_noegle.pem. Filen indeholder den kritiske hemmelighed i nøgleparret og må ikke deles. Hvis andre får adgang til denne fil, kan de dekryptere beskeder, der er krypteret med nøgleparrets offentlige nøgle.
 
-### `-PKEYOPT RSA_KEYGEN_BITS:2048`
+#### `-PKEYOPT RSA_KEYGEN_BITS:2048`
 
 > Sætter RSA-nøglens størrelse til 2048 bit. Nøglestørrelsen har betydning for sikkerheden, fordi større RSA-nøgler gør det vanskeligere at angribe nøgleparret. Større nøgler giver samtidig langsommere RSA-operationer.
 
@@ -41,19 +43,19 @@
 
 # 3. Udledning af offentlig nøgle fra den private nøgle
 
-### `PKEY`
+#### `PKEY`
 
 > Behandler nøglefiler. Her læses den private RSA-nøgle, og den tilhørende offentlige nøgle skrives ud som en separat fil.
 
-### `-IN ~/RSA/PRIVAT_NOEGLE.PEM`
+#### `-IN ~/RSA/PRIVAT_NOEGLE.PEM`
 
 > Bruger den private nøgle som input. Den private nøgle indeholder de nødvendige oplysninger til, at den offentlige nøgle kan udledes. Den offentlige nøgle kan derimod ikke bruges til praktisk at genskabe den private nøgle.
 
-### `-PUBOUT`
+#### `-PUBOUT`
 
 > Får OpenSSL til at skrive den offentlige nøgle ud. Den offentlige nøgle kan deles med andre og bruges til at kryptere beskeder til indehaveren af den private nøgle. Den offentlige nøgle kan ikke selv dekryptere de beskeder, den bruges til at kryptere.
 
-### `-OUT ~/RSA/OFFENTLIG_NOEGLE.PEM`
+#### `-OUT ~/RSA/OFFENTLIG_NOEGLE.PEM`
 
 > Gemmer den offentlige nøgle i filen offentlig_noegle.pem. Den offentlige nøgle kan deles, men afsenderen skal bruge den rigtige offentlige nøgle. Hvis en besked krypteres med en forkert eller falsk offentlig nøgle, kan den kun dekrypteres med den private nøgle, der hører til den forkerte offentlige nøgle.
 
@@ -65,31 +67,31 @@
 
 # 5. Kryptering med offentlig RSA-nøgle
 
-### `PKEYUTL`
+#### `PKEYUTL`
 
 > Udfører operationer med offentlige og private nøgler. Her bruges kommandoen til RSA-kryptering. RSA bruges normalt til små datamængder eller til at beskytte en symmetrisk nøgle, mens større datamængder typisk krypteres med fx AES.
 
-### `-ENCRYPT`
+#### `-ENCRYPT`
 
 > Starter krypteringsoperationen. Ved RSA-kryptering bruges den offentlige nøgle til at omdanne klartekst til chiffertekst. Formålet er fortrolighed, fordi kun den tilhørende private nøgle kan dekryptere resultatet.
 
-### `-PUBIN`
+#### `-PUBIN`
 
 > Fortæller OpenSSL, at nøglen i -inkey er en offentlig nøgle. Det passer med RSA-kryptering, hvor afsenderen bruger modtagerens offentlige nøgle til at kryptere beskeden. Den offentlige nøgle kan ikke selv bruges til at dekryptere chifferteksten.
 
-### `-INKEY ~/RSA/OFFENTLIG_NOEGLE.PEM`
+#### `-INKEY ~/RSA/OFFENTLIG_NOEGLE.PEM`
 
 > Bruger offentlig_noegle.pem som krypteringsnøgle. Beskeden krypteres til indehaveren af den tilhørende private nøgle. Det adskiller RSA fra symmetrisk kryptering, hvor samme hemmelige nøgle bruges til både kryptering og dekryptering.
 
-### `-IN ~/RSA/KLARTEKST.TXT`
+#### `-IN ~/RSA/KLARTEKST.TXT`
 
 > Læser klarteksten fra klartekst.txt. Klarteksten er den læsbare besked, der skal krypteres. I praktiske systemer bruges RSA normalt ikke til store filer direkte, fordi RSA har begrænsninger på, hvor meget data der kan krypteres ad gangen.
 
-### `-OUT ~/RSA/CIPHERTEKST.BIN`
+#### `-OUT ~/RSA/CIPHERTEKST.BIN`
 
 > Gemmer chifferteksten i ciphertekst.bin. Filen indeholder den krypterede version af klarteksten i binært format. Indholdet skal ikke kunne læses meningsfuldt som almindelig tekst, fordi det nu er krypteret.
 
-### `-PKEYOPT RSA_PADDING_MODE:OAEP`
+#### `-PKEYOPT RSA_PADDING_MODE:OAEP`
 
 > Vælger OAEP-padding til RSA-krypteringen. RSA bør ikke anvendes direkte på rå klartekst, fordi det giver en for simpel og forudsigelig behandling af beskeden. OAEP tilføjer en standardiseret paddingstruktur, som gør RSA-krypteringen egnet til praktisk brug.
 
@@ -97,27 +99,27 @@
 
 # 6. Dekryptering med privat RSA-nøgle
 
-### `OPENSSL PKEYUTL`
+#### `OPENSSL PKEYUTL`
 
 > Starter OpenSSLs funktion til public key-operationer. Her bruges funktionen til RSA-dekryptering.
 
-### `-DECRYPT`
+#### `-DECRYPT`
 
 > Starter dekrypteringsoperationen. Ved RSA-dekryptering bruges den private nøgle til at føre chifferteksten tilbage til klartekst. Det viser RSA’s asymmetri: kryptering og dekryptering bruger forskellige dele af samme nøglepar.
 
-### `-INKEY ~/RSA/PRIVAT_NOEGLE.PEM`
+#### `-INKEY ~/RSA/PRIVAT_NOEGLE.PEM`
 
 > Bruger den private nøgle som dekrypteringsnøgle. Den private nøgle er nødvendig, fordi beskeden blev krypteret med den tilhørende offentlige nøgle. En anden privat nøgle kan ikke dekryptere chifferteksten korrekt.
 
-### `-IN ~/RSA/CIPHERTEKST.BIN`
+#### `-IN ~/RSA/CIPHERTEKST.BIN`
 
 > Læser chifferteksten fra ciphertekst.bin. Chifferteksten er den krypterede besked, som ikke kan læses direkte. Den skal behandles med den korrekte private nøgle og samme paddingtype for at kunne genskabes som klartekst.
 
-### `-OUT ~/RSA/DEKRYPTERET.TXT`
+#### `-OUT ~/RSA/DEKRYPTERET.TXT`
 
 > Gemmer den dekrypterede klartekst i dekrypteret.txt. Hvis nøgleparret og paddingindstillingen passer sammen, indeholder filen den oprindelige besked.
 
-### `-PKEYOPT RSA_PADDING_MODE:OAEP`
+#### `-PKEYOPT RSA_PADDING_MODE:OAEP`
 
 > Bruger samme paddingtype som ved krypteringen. Dekryptering kræver ikke kun den korrekte private nøgle, men også korrekt fortolkning af den paddingstruktur, der blev brugt ved kryptering. Hvis paddingtypen ikke matcher, kan klarteksten ikke genskabes.
 
@@ -125,18 +127,18 @@
 
 # 7. Dekryptering med forkert privat nøgle
 
-### `OPENSSL GENPKEY -ALGORITHM RSA -OUT ~/RSA/FORKERT_PRIVAT_NOEGLE.PEM -PKEYOPT RSA_KEYGEN_BITS:2048`
+#### `OPENSSL GENPKEY -ALGORITHM RSA -OUT ~/RSA/FORKERT_PRIVAT_NOEGLE.PEM -PKEYOPT RSA_KEYGEN_BITS:2048`
 
 > Opretter en ny privat RSA-nøgle, som ikke hører sammen med offentlig_noegle.pem. Den nye nøgle har sit eget nøglepar og passer derfor ikke til den offentlige nøgle, der blev brugt ved krypteringen.
 
-### `-INKEY ~/RSA/FORKERT_PRIVAT_NOEGLE.PEM`
+#### `-INKEY ~/RSA/FORKERT_PRIVAT_NOEGLE.PEM`
 
 > Bruger den forkerte private nøgle til dekryptering. Fordi denne nøgle ikke hører til den offentlige nøgle fra krypteringen, kan RSA-operationen ikke genskabe den oprindelige klartekst.
 
-### `-OUT ~/RSA/FORKERT_DEKRYPTERET.TXT`
+#### `-OUT ~/RSA/FORKERT_DEKRYPTERET.TXT`
 
 > Gemmer resultatet af det mislykkede dekrypteringsforsøg. Hvis dekrypteringen fejler, bliver filen ikke dannet korrekt, eller indholdet bliver ikke den oprindelige klartekst.
 
-### `-PKEYOPT RSA_PADDING_MODE:OAEP`
+#### `-PKEYOPT RSA_PADDING_MODE:OAEP`
 
 > Bruger samme paddingtype som ved krypteringen. Selv med korrekt paddingtype kan beskeden ikke dekrypteres, hvis den private nøgle ikke hører til den offentlige nøgle, der blev brugt til kryptering.
