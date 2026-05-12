@@ -12,7 +12,7 @@
 ---
 
 *I denne sidste del af kryptografi "serien", vil jeg binde elementerne sammmen og yderlige binde klartekst filen til et digitalt signatur, som er det endelig led i en moderne kryptografisk proces* 
-## I et realistisk kommunikationsforløb bruges modtagerens offentlige nøgle til kryptering, mens afsenderens private nøgle bruges til signering. Det RSA-nøglepar, der tidligere blev oprettet i krypteringsdemonstrationen, kan derfor forstås som modtagerens nøglepar. I denne demonstration oprettes et særskilt RSA-nøglepar til afsenderen, som bruges til den digitale signatur.
+### I et realistisk kommunikationsforløb bruges modtagerens offentlige nøgle til kryptering, mens afsenderens private nøgle bruges til signering. Det RSA-nøglepar, der tidligere blev oprettet i krypteringsdemonstrationen, kan derfor forstås som modtagerens nøglepar. I denne demonstration oprettes et særskilt RSA-nøglepar til afsenderen, som bruges til den digitale signatur.
 
 ---
 
