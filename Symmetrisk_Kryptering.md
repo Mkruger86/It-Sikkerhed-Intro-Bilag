@@ -12,7 +12,7 @@
 ---
 
 # 1. Oprettelse af klartekst-fil
-<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/1f46b6a4-0cc4-4a09-abd8-c8575b12479d" />
+<img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/1f46b6a4-0cc4-4a09-abd8-c8575b12479d" />
 
 #### `ECHO`
 
@@ -33,7 +33,7 @@
 ---
 
 # 2. Adgangskode gemmes midlertidigt til OpenSSL
-<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/85f138a5-cb6e-436a-958f-0ed30f5a0e01" />
+<img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/85f138a5-cb6e-436a-958f-0ed30f5a0e01" />
 
 #### `PRINTF "INDTAST AES-ADGANGSKODE: "`
 
@@ -50,7 +50,7 @@
 ---
 
 # 3. Kryptering af klartekst
-<img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/15565b31-a6d1-4131-a530-04795eba8d01" />
+<img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/15565b31-a6d1-4131-a530-04795eba8d01" />
 
 #### `OPENSSL ENC`
 
@@ -91,7 +91,7 @@
 ---
 
 # 4. Dekryptering af chifferteksten
-<img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/96881a4c-bea1-4b42-b386-8eeda7455925" />
+<img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/96881a4c-bea1-4b42-b386-8eeda7455925" />
 
 #### `OPENSSL ENC`
 
@@ -132,7 +132,7 @@
 ---
 
 # 5. Ekstra: Forkert adgangskode
-<img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/62fc8df3-f756-4952-9210-c3a28ede5a82" />
+<img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/62fc8df3-f756-4952-9210-c3a28ede5a82" />
 
 #### `-PASS PASS:NEJ`
 
