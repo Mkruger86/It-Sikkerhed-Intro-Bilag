@@ -11,7 +11,8 @@
 
 ---
 
-*Fortsættelse af krypteringsalgoritmer demonstration. Referer til https://github.com/Mkruger86/It-Sikkerhed-Intro-Bilag/blob/main/Symmetrisk_Kryptering.md for symmetriske version. Jeg har forsøgt generelt at gå igennem alle kommandoer slavisk, samt tilkoblet kryptografisk betydning iht. brugen, hvis det nu skulle gå i glemmebogen senere hen. Desuden jeg i denne version været lidt mere grundigt med billede dokumentation*
+*Fortsættelse af krypteringsalgoritmer demonstration. Referer til https://github.com/Mkruger86/It-Sikkerhed-Intro-Bilag/blob/main/Symmetrisk_Kryptering.md for symmetriske version. Jeg har forsøgt generelt at gå igennem alle kommandoer slavisk, samt tilkoblet kryptografisk betydning iht. brugen, hvis det nu skulle gå i glemmebogen senere hen. Desuden jeg i denne version været lidt mere grundigt med billede dokumentation
+## VIGTIGTI denne demonstration behandles RSA-nøgleparret som modtagerens nøglepar. Den offentlige nøgle kan deles med afsenderen og bruges til at kryptere beskeden, mens den private nøgle forbliver hos modtageren og bruges til at dekryptere chifferteksten.*
 
 ---
 
