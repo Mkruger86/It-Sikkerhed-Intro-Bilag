@@ -66,11 +66,12 @@
 # 5. Ændring af filens indhold
 <img width="330" height="53" alt="image" src="https://github.com/user-attachments/assets/1de715ea-ee6a-4796-ab66-30f51109d452" />
 
-### Bemærk der nu er sat et punktum til sidst. Selvom ændringen er lille, er filindholdet ikke længere identisk med det indhold, den første hashværdi blev beregnet ud fra.
+#### Bemærk, at der nu er sat et punktum til sidst. Selvom ændringen er lille, er filindholdet ikke længere identisk med det indhold, den første hashværdi blev beregnet ud fra.
 
 ---
 
 # 6. Beregning af ny hashværdi efter ændringen
+<img width="554" height="147" alt="image" src="https://github.com/user-attachments/assets/b49a8ec8-0aad-477c-839f-501f31704266" />
 
 #### `sha256sum`
 
@@ -94,7 +95,7 @@
 
 > Kontrollerer igen filen mod den oprindelige hashværdi. Denne gang beregner kommandoen en SHA-256-værdi for den ændrede fil, som ikke længere matcher den værdi, der er gemt i klartekst.sha256. Derfor vises kontrollen som fejlet.
 
-#### `~/Hashing/klartekst.sha256`
+##### `~/Hashing/klartekst.sha256`
 
 > Den oprindelige hashfil bruges som reference for, hvordan filens indhold så ud før ændringen.
 
