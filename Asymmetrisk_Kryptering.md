@@ -46,6 +46,10 @@
 ---
 
 # 3. Udledning af offentlig nøgle fra den private nøgle
+<img width="632" height="66" alt="image" src="https://github.com/user-attachments/assets/24fa35ae-85c9-40fd-82b7-6b4a8d6da1a2" />
+
+<img width="141" height="123" alt="image" src="https://github.com/user-attachments/assets/ca7d2bc6-6a9a-4428-9b8f-ba0d0e5eee4e" />
+
 
 #### `PKEY`
 
@@ -66,10 +70,16 @@
 ---
 
 # 4. Oprettelse af klartekstfil
+<img width="406" height="76" alt="image" src="https://github.com/user-attachments/assets/0e648eed-009a-4f3d-9a70-b8e249db099e" />
+
+<img width="87" height="91" alt="image" src="https://github.com/user-attachments/assets/35932f58-612e-4984-bbaf-82da16c83d60" />
 
 ---
 
 # 5. Kryptering med offentlig RSA-nøgle
+<img width="619" height="251" alt="image" src="https://github.com/user-attachments/assets/dfb46b14-ee46-4b1f-a1c2-c53015ac6af8" />
+
+<img width="117" height="104" alt="image" src="https://github.com/user-attachments/assets/521c597d-4e66-440b-9b61-167d1735858a" />
 
 #### `PKEYUTL`
 
@@ -102,6 +112,8 @@
 ---
 
 # 6. Dekryptering med privat RSA-nøgle
+<img width="289" height="205" alt="image" src="https://github.com/user-attachments/assets/fe768e03-49cc-4ba0-b221-0da0be036bf1" />
+
 
 #### `OPENSSL PKEYUTL`
 
@@ -130,6 +142,11 @@
 ---
 
 # 7. Dekryptering med forkert privat nøgle
+<img width="643" height="173" alt="image" src="https://github.com/user-attachments/assets/ce6a4f33-7340-42ab-8181-0e69b7283224" />
+
+<img width="637" height="67" alt="image" src="https://github.com/user-attachments/assets/4f3d30aa-4226-43e0-a907-d8ad9a164613" />
+
+<img width="137" height="123" alt="image" src="https://github.com/user-attachments/assets/1728c718-8c4c-4090-a537-7929a44f4549" />
 
 #### `OPENSSL GENPKEY -ALGORITHM RSA -OUT ~/RSA/FORKERT_PRIVAT_NOEGLE.PEM -PKEYOPT RSA_KEYGEN_BITS:2048`
 
