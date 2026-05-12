@@ -1,6 +1,6 @@
 <div align="center">
 
-# Demonstration af symmetrisk kryptering
+# Demonstration af symmetrisk kryptering (AES)
 
 **Af**  
 **Michael Krüger Andersen**
