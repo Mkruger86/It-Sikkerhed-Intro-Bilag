@@ -28,8 +28,7 @@
 
 # 3. Generering af afsenderens private RSA-nøgle
 <img width="955" height="102" alt="image" src="https://github.com/user-attachments/assets/722918d3-e016-4e95-976a-f1a775fb03d7" />
-<img width="244" height="232" alt="image" src="https://github.com/user-attachments/assets/eeb424f6-1354-42ee-94d0-7de50a2ec1c7" />
-
+<img width="244" height="132" alt="image" src="https://github.com/user-attachments/assets/eeb424f6-1354-42ee-94d0-7de50a2ec1c7" />
 
 #### `genpkey`
 
@@ -50,6 +49,8 @@
 ---
 
 # 4. Udledning af afsenderens offentlige RSA-nøgle
+<img width="948" height="93" alt="image" src="https://github.com/user-attachments/assets/a6d6f3de-1cb7-4f17-a978-3e34d952dafb" />
+<img width="223" height="144" alt="image" src="https://github.com/user-attachments/assets/766611ea-1d92-404c-9540-9bbb14bf0d26" />
 
 #### `pkey`
 
@@ -70,6 +71,8 @@
 ---
 
 # 5. Oprettelse af digital signatur
+<img width="302" height="83" alt="image" src="https://github.com/user-attachments/assets/77ae5542-67eb-44b9-94c8-fa3abc78bd1e" />
+<img width="74" height="76" alt="image" src="https://github.com/user-attachments/assets/e91b7a73-9491-47d6-be40-162a41271778" />
 
 #### `openssl dgst`
 
@@ -98,7 +101,7 @@
 ---
 
 # 6. Verifikation af den digitale signatur
-
+<img width="336" height="97" alt="image" src="https://github.com/user-attachments/assets/ded85597-ade3-4dcf-a11c-9bf611341aab" />
 
 #### `openssl dgst`
 
@@ -129,6 +132,8 @@
 ---
 
 # 7. Verifikation med forkert offentlig nøgle
+<img width="958" height="319" alt="image" src="https://github.com/user-attachments/assets/eca8cefd-43a0-4747-9cad-6110c008ec57" />
+<img width="473" height="76" alt="image" src="https://github.com/user-attachments/assets/302aa230-1b0e-40b8-b9ee-91359a5d47c1" />
 
 #### `openssl genpkey -algorithm RSA -out ~/Signaturer/forkert_privat_noegle.pem -pkeyopt rsa_keygen_bits:2048`
 
