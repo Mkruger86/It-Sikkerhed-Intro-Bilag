@@ -17,11 +17,12 @@
 ---
 
 # 1. Oprettelse af arbejdsmappe
-<img width="152" height="132" alt="image" src="https://github.com/user-attachments/assets/2ed87f26-1a64-4101-a090-5542169d0dbc" />
+<img width="252" height="100" alt="image" src="https://github.com/user-attachments/assets/2ed87f26-1a64-4101-a090-5542169d0dbc" />
 
 ---
 
 # 2. Kopiering af klartekstfilen
+<img width="308" height="156" alt="image" src="https://github.com/user-attachments/assets/17ee9371-382e-4a18-9bc6-e5b2d4f0e68d" />
 
 ---
 
