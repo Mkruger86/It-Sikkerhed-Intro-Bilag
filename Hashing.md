@@ -16,10 +16,12 @@
 ---
 
 # 1. Oprettelse af arbejdsmappe
+<img width="535" height="160" alt="image" src="https://github.com/user-attachments/assets/867bef40-aea0-4878-8bba-808040b04ddb" />
 
 ---
 
 # 2. Kopiering af klartekstfilen fra RSA-demonstrationen
+<img width="628" height="118" alt="image" src="https://github.com/user-attachments/assets/62292b25-dc9c-4b62-8665-7b7c74b4cb1a" />
 
 #### `cp ~/RSA/klartekst.txt ~/Hashing/klartekst.txt`
 
