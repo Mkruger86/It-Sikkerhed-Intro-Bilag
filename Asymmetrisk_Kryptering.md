@@ -29,7 +29,7 @@
 
 #### `GENPKEY`
 
-> Genererer nøglemateriale. Her oprettes modtagerens private RSA-nøgle, som udgør den hemmelige del af nøgleparret. Nøglen skal forblive hos modtageren, fordi den senere bruges til at dekryptere chiffertekst, der er krypteret med den tilhørende offentlige nøgle.
+> > Genererer nøglemateriale. Her oprettes den private RSA-nøgle, som indeholder den hemmelige del af nøgleparret. Den private nøgle bruges senere til at dekryptere chiffertekst, der er krypteret med den tilhørende offentlige nøgle.
 
 #### `-ALGORITHM RSA`
 
