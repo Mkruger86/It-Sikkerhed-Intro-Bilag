@@ -21,51 +21,41 @@
 
 # 2. Kopiering af klartekstfilen fra RSA-demonstrationen
 
-#### `cp`
+#### `cp ~/RSA/klartekst.txt ~/Hashing/klartekst.txt`
 
-> Kopierer en fil fra én placering til en anden.
+> Kopierer Klartekstfilen fra den asymmetriske RSA-demonstrationen til hashing mappen.
 
-#### `~/RSA/klartekst.txt`
+---
 
-> Klartekstfilen fra den asymmetriske RSA-demonstration. Den samme besked bruges igen her, så hashing-afsnittet bygger videre på det eksisterende eksempel.
+# 3. Beregning og lagring af SHA-256-hashværdi
+
+#### `sha256sum`
+
+> Beregner en SHA-256-hashværdi for filens indhold. Resultatet er en kontrolværdi på 256 bit, som normalt vises som 64 hexadecimale tegn. Samme filindhold giver samme hashværdi, så længe inputtet er identisk.
 
 #### `~/Hashing/klartekst.txt`
 
-> Kopien af klartekstfilen, som bruges i hashing-demonstrationen. Filen placeres separat i ~/Hashing, så hashing-filerne samles i deres egen mappe.
+> Inputfilen til hashberegningen. Hele filens indhold indgår i beregningen, så selv en lille ændring i teksten vil betyde, at den oprindelige kontrolværdi ikke længere passer til filen.
 
-#### `cat ~/Hashing/klartekst.txt`
+#### `~/Hashing/klartekst.sha256`
 
-> Viser filens indhold i terminalen. Kommandoen bekræfter, at samme klartekst som i RSA-demonstrationen nu bruges som input til SHA-256.
----
+> Indeholder den beregnede SHA-256-hashværdi sammen med stien til den fil, hashværdien hører til. Det gør filen egnet til efterfølgende integritetskontrol med sha256sum -c.
 
-# 3. Udledning af offentlig nøgle fra den private nøgle
-<img width="632" height="66" alt="image" src="https://github.com/user-attachments/assets/24fa35ae-85c9-40fd-82b7-6b4a8d6da1a2" />
+#### `cat ~/Hashing/klartekst.sha256`
 
-<img width="141" height="123" alt="image" src="https://github.com/user-attachments/assets/ca7d2bc6-6a9a-4428-9b8f-ba0d0e5eee4e" />
-
-
-#### `PKEY`
-
-> Behandler nøglefiler. Her læses den private RSA-nøgle, og den tilhørende offentlige nøgle skrives ud som en separat fil.
-
-#### `-IN ~/RSA/PRIVAT_NOEGLE.PEM`
-
-> Bruger den private nøgle som input. Den private nøgle indeholder de nødvendige oplysninger til, at den offentlige nøgle kan udledes. Den offentlige nøgle kan derimod ikke bruges til praktisk at genskabe den private nøgle.
-
-#### `-PUBOUT`
-
-> Får OpenSSL til at skrive den offentlige nøgle ud. Den offentlige nøgle kan deles med andre og bruges til at kryptere beskeder til indehaveren af den private nøgle. Den offentlige nøgle kan ikke selv dekryptere de beskeder, den bruges til at kryptere.
-
-#### `-OUT ~/RSA/OFFENTLIG_NOEGLE.PEM`
-
-> Gemmer den offentlige nøgle i filen offentlig_noegle.pem. Den offentlige nøgle kan deles, men afsenderen skal bruge den rigtige offentlige nøgle. Hvis en besked krypteres med en forkert eller falsk offentlig nøgle, kan den kun dekrypteres med den private nøgle, der hører til den forkerte offentlige nøgle.
+> Viser den gemte hashværdi i terminalen. Outputtet vil bestå af hashværdien efterfulgt af filstien.
 
 ---
 
-# 4. Oprettelse af klartekstfil
-<img width="406" height="76" alt="image" src="https://github.com/user-attachments/assets/0e648eed-009a-4f3d-9a70-b8e249db099e" />
+# 4. Kontrol mod den gemte hashværdi
 
-<img width="87" height="91" alt="image" src="https://github.com/user-attachments/assets/35932f58-612e-4984-bbaf-82da16c83d60" />
+#### `sha256sum -c`
+
+> Kontrollerer, om filen stadig svarer til den gemte SHA-256-hashværdi. Kommandoen læser hashfilen, beregner en ny hashværdi for den angivne fil og sammenligner de to værdier. Hvis de matcher, vises resultatet som OK.
+
+#### `~/Hashing/klartekst.sha256`
+
+> Hashfilen bruges som reference ved kontrollen. Den indeholder både den tidligere beregnede SHA-256-værdi og stien til den fil, der skal kontrolleres.
 
 ---
 
