@@ -12,7 +12,7 @@
 ---
 
 # 1. Oprettelse af klartekst-fil
-<img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/1f46b6a4-0cc4-4a09-abd8-c8575b12479d" />
+<img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/f06b7a90-f2e5-49d0-83ca-d74c81284b67" />
 
 #### `ECHO`
 
